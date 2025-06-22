@@ -1,0 +1,8 @@
+ros-jazzy-crazyflie-examples (1.0.0-1bookworm) bookworm; urgency=high
+
+  * First official release.
+  * Contributors: Julien Thevenoz, Khaled Wahba, Kimberly N. McGuire, Pablo Robles, Wolfgang Hönig, phanfeld
+
+ -- Wolfgang Hönig, Kimberly McGuire <hoenig@tu-berlin.de>  Fri, 20 Jun 2025 22:00:00 -0000
+
+
