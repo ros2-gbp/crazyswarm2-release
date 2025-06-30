@@ -1,0 +1,15 @@
+ros-humble-crazyflie (1.0.1-1jammy) jammy; urgency=high
+
+  * Fix build errors and dependencies on ROS Build Farm
+  * Contributors: Kimberly N. McGuire, Wolfgang Hönig
+
+ -- Wolfgang Hönig, Kimberly McGuire <hoenig@tu-berlin.de>  Sun, 29 Jun 2025 22:00:00 -0000
+
+ros-humble-crazyflie (1.0.0-1jammy) jammy; urgency=high
+
+  * First official release.
+  * Contributors: Christian Llanes, Julien Thevenoz, Khaled Wahba, Kimberly N. McGuire, Pablo, Wolfgang Hönig, Zach Williams, ben-jarvis, nan cai, phanfeld, torobo
+
+ -- Wolfgang Hönig, Kimberly McGuire <hoenig@tu-berlin.de>  Fri, 20 Jun 2025 22:00:00 -0000
+
+
