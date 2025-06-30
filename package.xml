@@ -2,7 +2,7 @@
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
   <name>crazyflie</name>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
   <description>ROS 2 Package for Bitcraze Crazyflie robots</description>
   <maintainer email="hoenig@tu-berlin.de">Wolfgang Hönig, Kimberly McGuire</maintainer>
   <license>MIT</license>
@@ -17,6 +17,11 @@
   <depend>crazyflie_interfaces</depend>
   <depend>geometry_msgs</depend>
   <depend>motion_capture_tracking_interfaces</depend>
+  <depend>eigen</depend>
+  <depend>boost</depend>
+  <depend>libusb-1.0-dev</depend>
+  <depend>ros_environment</depend>
+
 
   <exec_depend>tf_transformations</exec_depend>
 
