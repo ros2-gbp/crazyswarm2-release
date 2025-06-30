@@ -1,8 +1,0 @@
-ros-jazzy-crazyflie-sim (1.0.0-1bookworm) bookworm; urgency=high
-
-  * First official release.
-  * Contributors: HP99, Khaled Wahba, Kimberly N. McGuire, Pablo, Wolfgang Hönig, julienthevenoz, matthewoots, phanfeld
-
- -- Wolfgang Hönig, Kimberly McGuire <hoenig@tu-berlin.de>  Fri, 20 Jun 2025 22:00:00 -0000
-
-
