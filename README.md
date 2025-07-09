@@ -1,3 +1,31 @@
+## crazyswarm2 (humble) - 1.0.3-1
+
+The packages in the `crazyswarm2` repository were released into the `humble` distro by running `/usr/bin/bloom-release --rosdistro humble crazyswarm2` on `Wed, 09 Jul 2025 06:49:09 -0000`
+
+These packages were released:
+- `crazyflie`
+- `crazyflie_examples`
+- `crazyflie_interfaces`
+- `crazyflie_py`
+- `crazyflie_sim`
+
+Version of package(s) in repository `crazyswarm2`:
+
+- upstream repository: https://github.com/IMRCLab/crazyswarm2.git
+- release repository: https://github.com/ros2-gbp/crazyswarm2-release.git
+- rosdistro version: `1.0.2-1`
+- old version: `1.0.2-1`
+- new version: `1.0.3-1`
+
+Versions of tools used:
+
+- bloom version: `0.12.0`
+- catkin_pkg version: `1.0.0`
+- rosdep version: `0.25.1`
+- rosdistro version: `1.0.1`
+- vcstools version: `0.1.42`
+
+
 ## crazyswarm2 (humble) - 1.0.2-1
 
 The packages in the `crazyswarm2` repository were released into the `humble` distro by running `/usr/bin/bloom-release --rosdistro humble crazyswarm2` on `Wed, 02 Jul 2025 16:46:21 -0000`
