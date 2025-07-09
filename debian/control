@@ -1,0 +1,12 @@
+Source: ros-jazzy-crazyflie-sim
+Section: misc
+Priority: optional
+Maintainer: Wolfgang Hönig <hoenig@tu-berlin.de>
+Build-Depends: debhelper (>= 9.0.0), python3-pytest <!nocheck>, ros-jazzy-ament-cmake, ros-jazzy-ament-cmake-pytest <!nocheck>, ros-jazzy-ament-cmake-python, ros-jazzy-ament-copyright <!nocheck>, ros-jazzy-ament-flake8 <!nocheck>, ros-jazzy-ament-pep257 <!nocheck>, ros-jazzy-crazyflie-interfaces, ros-jazzy-rclpy, ros-jazzy-ros-workspace
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-jazzy-crazyflie-sim
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-jazzy-crazyflie-interfaces, ros-jazzy-rclpy, ros-jazzy-ros-workspace
+Description: Simulator for the Crazyswarm2 ROS stack
