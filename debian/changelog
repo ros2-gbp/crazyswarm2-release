@@ -1,0 +1,27 @@
+ros-humble-crazyflie-sim (1.0.3-1jammy) jammy; urgency=high
+
+  * Improve package.xml (separate maintainer tags, update year)
+  * Contributors: Kimberly N. McGuire
+
+ -- Wolfgang Hönig <hoenig@tu-berlin.de>  Tue, 08 Jul 2025 22:00:00 -0000
+
+ros-humble-crazyflie-sim (1.0.2-1jammy) jammy; urgency=high
+
+
+
+ -- Wolfgang Hönig, Kimberly McGuire <hoenig@tu-berlin.de>  Tue, 01 Jul 2025 22:00:00 -0000
+
+ros-humble-crazyflie-sim (1.0.1-1jammy) jammy; urgency=high
+
+
+
+ -- Wolfgang Hönig, Kimberly McGuire <hoenig@tu-berlin.de>  Sun, 29 Jun 2025 22:00:00 -0000
+
+ros-humble-crazyflie-sim (1.0.0-1jammy) jammy; urgency=high
+
+  * First official release.
+  * Contributors: HP99, Khaled Wahba, Kimberly N. McGuire, Pablo, Wolfgang Hönig, julienthevenoz, matthewoots, phanfeld
+
+ -- Wolfgang Hönig, Kimberly McGuire <hoenig@tu-berlin.de>  Fri, 20 Jun 2025 22:00:00 -0000
+
+
