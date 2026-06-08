@@ -2,6 +2,10 @@
 Changelog for package crazyflie_interfaces
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.0.4 (2026-06-08)
+------------------
+
+
 1.0.3 (2025-07-09)
 ------------------
 * add more dependencies to fix the binary build
