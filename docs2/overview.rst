@@ -5,7 +5,7 @@ Overview
 
 This page will explain the overview of the crazyflie ROS 2 nodes:
 
-.. image:: images/overview_nodes.jpg
+.. image:: images/architecture.png
 
 
 Explanation per package
@@ -65,7 +65,7 @@ Support functionality with backends
 +---------------------+---------+-----------+---------+
 | - default: scan     | Yes     | Yes       | No      |
 +---------------------+---------+-----------+---------+
-| - default: odom     | No      | Yes       | No      |
+| - default: odom     | Yes     | Yes       | No      |
 +---------------------+---------+-----------+---------+
 | - default: status   | Yes     | Yes       | No      |
 +---------------------+---------+-----------+---------+
@@ -79,9 +79,11 @@ Support functionality with backends
 +---------------------+---------+-----------+---------+
 | - cmd_full_state    | Yes     | Yes       | Yes     |
 +---------------------+---------+-----------+---------+
-| - cmd_position      | Yes     | No        | No      |
+| - cmd_position      | Yes     | Yes       | No      |
 +---------------------+---------+-----------+---------+
-| - cmd_hover         | No      | Yes       | No      |
+| - cmd_hover         | Yes     | Yes       | No      |
++---------------------+---------+-----------+---------+
+| - cmd_velocity_world| Yes     | Yes       | No      |
 +---------------------+---------+-----------+---------+
 | High-level control                                  |
 +---------------------+---------+-----------+---------+
