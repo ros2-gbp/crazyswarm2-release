@@ -14,10 +14,10 @@ from collections import defaultdict
 # from .visualizer import visNull
 
 
-from crazyflie_interfaces.msg import FullState, Position, Status, TrajectoryPolynomialPiece
+from crazyflie_interfaces.msg import FullState, Hover, Position, Status, TrajectoryPolynomialPiece
 from crazyflie_interfaces.srv import Arm, GoTo, Land, \
     NotifySetpointsStop, StartTrajectory, Takeoff, UploadTrajectory
-from geometry_msgs.msg import Point
+from geometry_msgs.msg import Point, PoseStamped
 import numpy as np
 from rcl_interfaces.msg import Parameter, ParameterType, ParameterValue
 from rcl_interfaces.srv import DescribeParameters, GetParameters, ListParameters, SetParameters
@@ -143,6 +143,12 @@ class Crazyflie:
             Status, f'{self.prefix}/status', self.status_topic_callback, 10)
         self.status = {}
 
+        self.poseStampedSubscriber = node.create_subscription(
+            PoseStamped, f'{self.prefix}/pose', self.poseStamped_topic_callback, 10)
+        self.poseStamped = {}
+        self.pose = {}
+        self.position = [0.0, 0.0, 0.0]
+
         # Query some settings
         self.getParamsService = node.create_client(
             GetParameters, '/crazyflie_server/get_parameters')
@@ -184,6 +190,11 @@ class Crazyflie:
             Position, prefix + '/cmd_position', 1)
         self.cmdPositionMsg = Position()
         self.cmdPositionMsg.header.frame_id = '/world'
+
+        self.cmdHoverPublisher = node.create_publisher(
+            Hover, prefix + '/cmd_hover', 1)
+        self.cmdHoverMsg = Hover()
+        self.cmdHoverMsg.header.frame_id = '/world'
 
         # self.cmdVelocityWorldPublisher = rospy.Publisher(
         #   prefix + '/cmd_velocity_world', VelocityWorld, queue_size=1)
@@ -722,6 +733,27 @@ class Crazyflie:
         self.cmdPositionMsg.yaw = yaw
         self.cmdPositionPublisher.publish(self.cmdPositionMsg)
 
+    def cmdHover(self, vx, vy, yaw_rate, z_distance):
+        """
+        Send a streaming hover setpoint command.
+
+        Sends vx/vy velocity and yaw rate commands while holding a fixed
+        height. This is the mode used by velocity-based teleoperation.
+
+        Args:
+            vx (float): Velocity in the x direction. Meters / second.
+            vy (float): Velocity in the y direction. Meters / second.
+            yaw_rate (float): Yaw angular velocity. Radians / second.
+            z_distance (float): Desired hover height. Meters.
+
+        """
+        self.cmdHoverMsg.header.stamp = self.node.get_clock().now().to_msg()
+        self.cmdHoverMsg.vx = vx
+        self.cmdHoverMsg.vy = vy
+        self.cmdHoverMsg.yaw_rate = yaw_rate
+        self.cmdHoverMsg.z_distance = z_distance
+        self.cmdHoverPublisher.publish(self.cmdHoverMsg)
+
     # def setLEDColor(self, r, g, b):
     #     """Sets the color of the LED ring deck.
 
@@ -774,6 +806,33 @@ class Crazyflie:
         """
         # self.node.get_logger().info(f'Crazyflie.get_status() was called {self.status}')
         return self.status
+
+    def poseStamped_topic_callback(self, msg):
+        """
+        Call back for topic /cfXXX/pose.
+
+        Update the pose attribute every time a pose
+        message is published on the topic /cfXXX/pose
+        """
+        self.poseStamped = {'id': msg.header.frame_id,
+                            'timestamp_sec': msg.header.stamp.sec,
+                            'timestamp_nsec': msg.header.stamp.nanosec,
+                            'pose': msg.pose}
+
+        poseMsg = self.poseStamped['pose']
+
+        self.pose = {'position': poseMsg.position,
+                     'orientation': poseMsg.orientation}
+
+        positionMsg = self.pose['position']
+
+        self.position = [float(positionMsg.x), float(positionMsg.y), float(positionMsg.z)]
+
+    def get_pose(self):
+        return self.pose
+
+    def get_position(self):
+        return self.position
 
 
 class CrazyflieServer(rclpy.node.Node):
