@@ -1,0 +1,42 @@
+ros-lyrical-crazyflie-examples (1.0.5-1resolute) resolute; urgency=high
+
+  * separate crazyflie_description package
+  * Contributors: Kimberly N. McGuire
+
+ -- "Wolfgang Hönig" <hoenig@tu-berlin.de>  Sun, 28 Jun 2026 22:00:00 -0000
+
+ros-lyrical-crazyflie-examples (1.0.4-1resolute) resolute; urgency=high
+
+  * refactoring of code and minor bugfixes
+  * add support for Crazyradio 2 (firmware >= 5.1)
+  * Contributors: Kimberly N. McGuire, Wolfgang Hönig
+
+ -- "Wolfgang Hönig" <hoenig@tu-berlin.de>  Sun, 07 Jun 2026 22:00:00 -0000
+
+ros-lyrical-crazyflie-examples (1.0.3-1resolute) resolute; urgency=high
+
+  * Improve package.xml (separate maintainer tags, update year)
+  * Contributors: Kimberly N. McGuire
+
+ -- "Wolfgang Hönig" <hoenig@tu-berlin.de>  Tue, 08 Jul 2025 22:00:00 -0000
+
+ros-lyrical-crazyflie-examples (1.0.2-1resolute) resolute; urgency=high
+
+
+
+ -- "Wolfgang Hönig" <hoenig@tu-berlin.de>  Tue, 01 Jul 2025 22:00:00 -0000
+
+ros-lyrical-crazyflie-examples (1.0.1-1resolute) resolute; urgency=high
+
+
+
+ -- "Wolfgang Hönig" <hoenig@tu-berlin.de>  Sun, 29 Jun 2025 22:00:00 -0000
+
+ros-lyrical-crazyflie-examples (1.0.0-1resolute) resolute; urgency=high
+
+  * First official release.
+  * Contributors: Julien Thevenoz, Khaled Wahba, Kimberly N. McGuire, Pablo Robles, Wolfgang Hönig, phanfeld
+
+ -- "Wolfgang Hönig" <hoenig@tu-berlin.de>  Fri, 20 Jun 2025 22:00:00 -0000
+
+
