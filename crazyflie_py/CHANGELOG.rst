@@ -2,6 +2,11 @@
 Changelog for package crazyflie_py
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.0.6 (2026-08-18)
+------------------
+* Remove rowan dependency
+* Contributors: Wolfgang Hönig
+
 1.0.5 (2026-06-29)
 ------------------
 * separate crazyflie_description package
