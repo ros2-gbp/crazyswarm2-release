@@ -1,0 +1,14 @@
+ros-rolling-crazyflie-description (1.0.6-1trixie) trixie; urgency=high
+
+
+
+ -- "Wolfgang Hönig" <hoenig@tu-berlin.de>  Mon, 17 Aug 2026 22:00:00 -0000
+
+ros-rolling-crazyflie-description (1.0.5-1trixie) trixie; urgency=high
+
+  * separate crazyflie_description package
+  * Contributors: Kimberly N. McGuire
+
+ -- "Wolfgang Hönig" <hoenig@tu-berlin.de>  Sun, 28 Jun 2026 22:00:00 -0000
+
+
