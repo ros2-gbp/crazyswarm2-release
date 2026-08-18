@@ -1,0 +1,12 @@
+Source: ros-jazzy-crazyflie-description
+Section: misc
+Priority: optional
+Maintainer: "Wolfgang Hönig" <hoenig@tu-berlin.de>
+Build-Depends: debhelper (>= 9.0.0), ros-jazzy-ament-cmake, ros-jazzy-ros-workspace
+Homepage: https://index.ros.org/p/crazyflie_description/#jazzy
+Standards-Version: 3.9.2
+
+Package: ros-jazzy-crazyflie-description
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-jazzy-ros-workspace
+Description: URDF and mesh assets for the Crazyflie robot
