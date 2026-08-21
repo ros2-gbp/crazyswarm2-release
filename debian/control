@@ -1,0 +1,12 @@
+Source: ros-humble-crazyflie-examples
+Section: misc
+Priority: optional
+Maintainer: "Wolfgang Hönig" <hoenig@tu-berlin.de>
+Build-Depends: debhelper (>= 9.0.0), python3-pytest <!nocheck>, ros-humble-ament-cmake, ros-humble-ament-cmake-pytest <!nocheck>, ros-humble-ament-cmake-python, ros-humble-ament-copyright <!nocheck>, ros-humble-ament-flake8 <!nocheck>, ros-humble-ament-pep257 <!nocheck>, ros-humble-crazyflie-py, ros-humble-geometry-msgs, ros-humble-nav-msgs, ros-humble-rclpy, ros-humble-sensor-msgs, ros-humble-tf2-ros, ros-humble-ros-workspace
+Homepage: https://index.ros.org/p/crazyflie_examples/#humble
+Standards-Version: 3.9.2
+
+Package: ros-humble-crazyflie-examples
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-humble-crazyflie-py, ros-humble-geometry-msgs, ros-humble-nav-msgs, ros-humble-rclpy, ros-humble-sensor-msgs, ros-humble-tf-transformations, ros-humble-tf2-ros, ros-humble-ros-workspace
+Description: Examples for the Crazyswarm2 ROS stack
