@@ -2,6 +2,11 @@
 Changelog for package crazyflie
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.0.7 (2026-08-21)
+------------------
+* Add rclpy to package.xml to fix build farm errors
+* Contributors: Kimberly McGuire
+
 1.0.6 (2026-08-18)
 ------------------
 * Fix matrix shape order and add configurable image encoding
