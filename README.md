@@ -1,3 +1,34 @@
+## crazyswarm2 (rolling) - 1.0.7-1
+
+The packages in the `crazyswarm2` repository were released into the `rolling` distro by running `/usr/bin/bloom-release --rosdistro rolling crazyswarm2` on `Fri, 21 Aug 2026 14:58:02 -0000`
+
+These packages were released:
+- `crazyflie`
+- `crazyflie_description`
+- `crazyflie_examples`
+- `crazyflie_interfaces`
+- `crazyflie_py`
+- `crazyflie_server_cpp`
+- `crazyflie_server_py`
+- `crazyflie_sim`
+
+Version of package(s) in repository `crazyswarm2`:
+
+- upstream repository: https://github.com/IMRCLab/crazyswarm2.git
+- release repository: https://github.com/ros2-gbp/crazyswarm2-release.git
+- rosdistro version: `1.0.6-1`
+- old version: `1.0.6-1`
+- new version: `1.0.7-1`
+
+Versions of tools used:
+
+- bloom version: `0.14.3`
+- catkin_pkg version: `1.1.0`
+- rosdep version: `0.26.0`
+- rosdistro version: `1.0.1`
+- vcstools version: `0.1.42`
+
+
 ## crazyswarm2 (humble) - 1.0.6-1
 
 The packages in the `crazyswarm2` repository were released into the `humble` distro by running `/home/knm/dev/crazyswarm2/src/crazyswarm2/.pixi/envs/default/bin/bloom-release --rosdistro humble crazyswarm2` on `Tue, 18 Aug 2026 19:41:01 -0000`
