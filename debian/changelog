@@ -1,0 +1,14 @@
+ros-rolling-crazyflie-server-cpp (1.0.7-1resolute) resolute; urgency=high
+
+
+
+ -- "Wolfgang Hönig" <hoenig@tu-berlin.de>  Thu, 20 Aug 2026 22:00:00 -0000
+
+ros-rolling-crazyflie-server-cpp (1.0.6-1resolute) resolute; urgency=high
+
+  * Separate Crazyflie cpp server
+  * Contributors: Kimberly McGuire
+
+ -- "Wolfgang Hönig" <hoenig@tu-berlin.de>  Mon, 17 Aug 2026 22:00:00 -0000
+
+
